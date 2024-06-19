@@ -1,2 +1,2 @@
 # Rock-Paper-Scissors
-Javascript game, played in the console
+Basic Javascript game, played in the console
