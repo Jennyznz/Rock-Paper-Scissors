@@ -1,5 +1,3 @@
-console.log(playGame());
-
 let humanScore = 0;
 let computerScore = 0;
 
@@ -36,7 +34,7 @@ function playRound(human, computer) {
             console.log("It's a tie! You both chose Rock.");
         }   
         else if (computer == "paper") {
-            console.log("You lose!. Paper beats Rock.");
+            console.log("You lose! Paper beats Rock.");
             computerScore ++;
         }
         else if (computer == "scissors") {
@@ -78,12 +76,14 @@ function playGame() {
         playRound(getHumanChoice(), getComputerChoice());
     }
     if (humanScore > computerScore) {
-        console.log("You win the game! Score: ${} / 5", humanScore);
+        console.log(`You win the game! Score: ${humanScore} / 5`);
     }
     else if (humanScore < computerScore) {
-        console.log("You lost the game. Score: ${} / 5", humanScore);
+        console.log(`You lost the game. Score: ${humanScore} / 5`);
     }
     else if (humanScore == computerScore) {
-        console.log("It's a draw. Both you and the computer scored ${} points", humanScore);
+        console.log(`It's a draw. Both you and the computer scored ${humanScore} points`);
     }
 }
+
+console.log(playGame());
